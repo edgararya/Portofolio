@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
+  <img src="assets/Portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
 
   <br><br>
   <h4>Personal Portfolio Website</h4>
