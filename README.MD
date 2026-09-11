@@ -2,7 +2,7 @@
   <img src="assets/Portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
 
   <br><br>
-  <h4>Personal Portfolio Website</h4>
+  <h2>Personal Portfolio Website</h2>
   
   <p><sub>A minimalist personal website built with vanilla web technologies to showcase projects, engineering writings, and photography.</sub></p>
 
