@@ -1,12 +1,13 @@
 <div align="center">
-  <img src="assets/Portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
+  <img src="assets/portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
 
-  # Personal Portfolio Website
+  <br><br>
+  <h4>Personal Portfolio Website</h4>
   
-  <p>A minimalist personal website built with vanilla web technologies to showcase projects, engineering writings, and photography.</p>
+  <p><sub>A minimalist personal website built with vanilla web technologies to showcase projects, engineering writings, and photography.</sub></p>
 
   <p>
-    <a href="https://your-live-demo-url.vercel.app"><strong>View Live Demo »</strong></a>
+    <a href="https://portofolio.edgar.my.id"><strong>View Live Demo »</strong></a>
   </p>
 </div>
 
