@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="assets/Portofolio.png" alt="Edgar's Portfolio Preview" width="100%">
+  <img src="assets/Portofolio.png" alt="Edgar's Portfolio Preview" width="90%">
 
   <br><br>
-  <h2>Personal Portfolio Website</h2>
+  <h1>Personal Portfolio Website</h1>
   
   <p><sub>A minimalist personal website built with vanilla web technologies to showcase projects, engineering writings, and photography.</sub></p>
 
@@ -13,7 +13,7 @@
 
 ---
 
-## Highlights
+<h3>Highlights</h3>
 
 * **Multi-Page Architecture:** Dedicated sections for Projects, Blogs, and a curated Photos gallery with a custom lightbox.
 * **Responsive & Accessible:** Fluid layout designed for mobile, tablet, and desktop viewing.
