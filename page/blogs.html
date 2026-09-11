@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Blogs - Edgar Portfolio</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Style Guidance -->
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0B0F15',
+                        surface: '#131A22',
+                        border: '#232D3B',
+                        textMain: '#E2E8F0',
+                        textMuted: '#94A3B8',
+                        tagBg: '#1E293B',
+                        tagText: '#CBD5E1'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style data-purpose="typography">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-textMain antialiased min-h-screen flex flex-col items-center">
+<!-- BEGIN: MainHeader -->
+<header class="w-full max-w-[1200px] px-6 py-8 flex justify-center items-center relative">
+<nav aria-label="Main Navigation">
+<ul class="flex space-x-8 text-sm font-medium text-textMuted">
+<li class=""><a class="hover:text-white transition-colors" href="../../index.html">Home</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="../project-page/project.html">Projects</a></li>
+<li class=""><a class="text-textMain hover:text-white transition-colors" href="#">Blogs</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="../photos/photos.html">Photos</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">About</a></li>
+</ul>
+</nav>
+<button aria-label="Toggle Dark Mode" class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-white">
+<svg class="lucide lucide-sun-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a2.836 2.836 0 0 0-4 4 4 4 0 1 1-4-4"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+</button>
+</header>
+<!-- END: MainHeader -->
+<!-- Main Content -->
+<main class="w-full max-w-[1200px] px-6 flex-grow flex flex-col items-center pt-24 pb-16">
+<!-- Header Section -->
+<section class="text-center flex flex-col items-center mb-16 w-full" data-purpose="hero-section">
+<h1 class="text-3xl font-semibold mb-4 text-white text-left w-full">Blogs</h1>
+<p class="text-base text-textMuted leading-relaxed text-left w-full">
+                Notes on what I'm building, breaking, and learning
+            </p>
+</section>
+<!-- Blogs List -->
+<div class="flex flex-col w-full gap-4 max-w-[800px] self-start lg:mx-auto">
+<!-- Blog Card 1 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start cursor-pointer group">
+<div class="flex justify-between items-start w-full">
+<h3 class="text-sm font-medium text-white group-hover:text-white pr-4">Membangun Bansar Verify: Kenapa 3 Role Terpisah?</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5 whitespace-nowrap">Coming Soon</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+                    A behind-the-scenes look at the architecture decisions behind a social aid verification system — why three distinct access roles, and how Laravel, Inertia, and React fit together.
+                </p>
+<div class="flex items-center gap-2 text-xs text-textMuted mt-2">
+<svg class="lucide lucide-clock" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span>5 min read</span>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start cursor-pointer group">
+<div class="flex justify-between items-start w-full">
+<h3 class="text-sm font-medium text-white group-hover:text-white pr-4">Ensemble Model untuk Klasifikasi Sampah</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5 whitespace-nowrap">Coming Soon</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+                    Notes from building an ensemble pipeline for a national ML competition — combining EfficientNetV2-S, ConvNeXt, and Swin Transformer for 3-class waste classification.
+                </p>
+<div class="flex items-center gap-2 text-xs text-textMuted mt-2">
+<svg class="lucide lucide-clock" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span>7 min read</span>
+</div>
+</article>
+<!-- Blog Card 3 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start cursor-pointer group">
+<div class="flex justify-between items-start w-full">
+<h3 class="text-sm font-medium text-white group-hover:text-white pr-4">Deteksi Deepfake dengan MesoNet Ensemble + ELA</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5 whitespace-nowrap">Coming Soon</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+                    A technical breakdown of a deepfake detection system combining a three-model ensemble with Error Level Analysis and blur detection.
+                </p>
+<div class="flex items-center gap-2 text-xs text-textMuted mt-2">
+<svg class="lucide lucide-clock" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span>8 min read</span>
+</div>
+</article>
+<!-- Blog Card 4 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start cursor-pointer group">
+<div class="flex justify-between items-start w-full">
+<h3 class="text-sm font-medium text-white group-hover:text-white pr-4">Belajar BPMN dari Studi Kasus Dapur MBG</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5 whitespace-nowrap">Coming Soon</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+                    Lessons from mapping a real kitchen's operational workflow into BPMN — and the structural gaps that surfaced along the way.
+                </p>
+<div class="flex items-center gap-2 text-xs text-textMuted mt-2">
+<svg class="lucide lucide-clock" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span>4 min read</span>
+</div>
+</article>
+<!-- Blog Card 5 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start cursor-pointer group">
+<div class="flex justify-between items-start w-full">
+<h3 class="text-sm font-medium text-white group-hover:text-white pr-4">Catatan Eksplorasi Karier: IT BA vs Data Analyst</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5 whitespace-nowrap">Coming Soon</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+                    A reflective look at exploring different tech career paths and figuring out where interests and experience actually line up.
+                </p>
+<div class="flex items-center gap-2 text-xs text-textMuted mt-2">
+<svg class="lucide lucide-clock" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span>6 min read</span>
+</div>
+</article>
+</div>
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="w-full py-8 mt-auto flex justify-center text-xs text-textMuted">
+<p class="">© 2025 edgar — built with Next.js and Tailwind</p>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

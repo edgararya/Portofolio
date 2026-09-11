@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Projects - Edgar Portfolio</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Style Guidance -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0B0F15',
+            surface: '#131A22',
+            border: '#232D3B',
+            textMain: '#E2E8F0',
+            textMuted: '#94A3B8',
+            tagBg: '#1E293B',
+            tagText: '#CBD5E1'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+</script>
+<style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-background text-textMain antialiased min-h-screen flex flex-col items-center">
+<!-- BEGIN: MainHeader -->
+<header class="w-full max-w-[1200px] px-6 py-8 flex justify-center items-center relative">
+<nav aria-label="Main Navigation">
+<ul class="flex space-x-8 text-sm font-medium text-textMuted">
+<li class=""><a class="hover:text-white transition-colors" href="../../index.html">Home</a></li>
+<li class=""><a class="text-textMain hover:text-white transition-colors" href="#">Projects</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="../blogs-page/blogs.html">Blogs</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="../photos/photos.html">Photos</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">About</a></li>
+</ul>
+</nav>
+<button aria-label="Toggle Dark Mode" class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-white">
+<svg class="lucide lucide-sun-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a2.836 2.836 0 0 0-4 4 4 4 0 1 1-4-4"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+</button>
+</header>
+<!-- END: MainHeader -->
+<!-- Main Content -->
+<main class="w-full max-w-[1200px] px-6 flex-grow flex flex-col items-center pt-24 pb-16">
+<!-- Header Section -->
+<section class="text-center flex flex-col items-center mb-16 w-full" data-purpose="hero-section">
+<h1 class="text-3xl font-semibold mb-4 text-white text-left w-full">Projects</h1>
+<p class="text-base text-textMuted leading-relaxed text-left w-full">
+    A selection of systems, architectures, and experiments built with precision. Focusing on scalable solutions and advanced data processing pipelines.
+</p>
+</section>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 w-full gap-4 md:grid-cols-2">
+<!-- Project 1: Bansar Verify -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start">
+<h3 class="text-sm font-medium text-white">Bansar Verify</h3>
+<p class="text-xs text-textMuted leading-relaxed">
+    Social aid verification system designed to ensure transparent and accurate distribution. Architected with three distinct access roles — Citizen, Village Admin, and Central Auditor — to maintain data integrity and auditability across administrative levels.
+</p>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">Laravel</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">React</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">Inertia.js</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">Tailwind CSS</span>
+</div>
+<div class="flex gap-4 mt-2"><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-code" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>GitHub</a><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-external-link" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>Live Demo</a></div></article>
+<!-- Project 2: DeepGuard -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start">
+<h3 class="text-sm font-medium text-white">DeepGuard</h3>
+<p class="text-xs text-textMuted leading-relaxed">
+    Deepfake detection system engineered using a sophisticated three-model MesoNet ensemble to identify micro-artifacts in manipulated video streams with high confidence.
+</p>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">TensorFlow</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">Python</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">CNN</span>
+</div>
+<div class="flex gap-4 mt-2"><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-code" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>GitHub</a><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-external-link" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>Live Demo</a></div></article>
+<!-- Project 3: BDC Satria Data 2026 -->
+<article class="p-5 rounded-lg border border-border flex flex-col gap-3 hover:border-textMuted transition-colors bg-transparent items-start">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-medium text-white pr-4">BDC Satria Data 2026</h3>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none mt-0.5">Competition</span>
+</div>
+<p class="text-xs text-textMuted leading-relaxed">
+    An advanced ensemble deep learning pipeline optimized for high-accuracy waste classification. Developed for national competition, combining multiple state-of-the-art architectures to achieve robust generalization across varied environmental datasets.
+</p>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">PyTorch</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">EfficientNetV2-S</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">ConvNeXt</span>
+<span class="px-2 py-1 rounded bg-tagBg text-tagText text-[10px] font-medium leading-none">Swin Transformer</span>
+</div>
+<div class="flex gap-4 mt-2"><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-code" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>GitHub</a><a class="flex items-center gap-2 text-xs text-textMuted hover:text-white transition-colors" href="#"><svg class="lucide lucide-external-link" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>Results</a></div></article>
+<!-- Project 4: Future Experiment -->
+<article class="p-5 rounded-lg border border-dashed border-border flex flex-col gap-3 items-center text-center justify-center min-h-[200px] bg-transparent md:col-span-2">
+<h3 class="text-sm font-medium text-textMuted">Future Experiment</h3>
+<p class="text-xs text-textMuted leading-relaxed max-w-sm">
+    Currently architecting a new microservices-based project. Space reserved for upcoming technical deployments.
+</p>
+</article>
+</div>
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="w-full py-8 mt-auto flex justify-center text-xs text-textMuted">
+<p class="">© 2025 edgar — built with Next.js and Tailwind</p>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
