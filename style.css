@@ -1,4 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
 body {
   font-family: 'Inter', sans-serif;
+}
+
+/* ==========================================================================
+   Masonry Grid & Gallery Layout (Used in page/photos.html)
+   ========================================================================== */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+/* Height presets for photo gallery cards */
+.h-tall {
+  height: 400px;
+}
+
+.h-square {
+  height: 300px;
+}
+
+.h-wide {
+  height: 250px;
+}
+
+/* Gallery hover interactions */
+.gallery-item:hover .expand-icon {
+  opacity: 1;
 }
