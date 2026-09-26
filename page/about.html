@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About - Edgar Portfolio</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    background: '#0B0F15',
+                    surface: '#131A22',
+                    border: '#232D3B',
+                    textMain: '#E2E8F0',
+                    textMuted: '#94A3B8',
+                    tagBg: '#1E293B',
+                    tagText: '#CBD5E1'
+                },
+                fontFamily: {
+                    sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+                }
+            }
+        }
+    }
+</script>
+<style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-background text-textMain antialiased min-h-screen flex flex-col items-center">
+<!-- BEGIN: MainHeader -->
+ <header class="w-full max-w-[1200px] px-6 py-8 flex justify-center items-center relative">
+    <nav aria-label="Main Navigation">
+        <ul class="flex space-x-8 text-sm font-medium text-textMuted">
+            <li class=""><a class="hover:text-white transition-colors" href="../index.html">Home</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="project.html">Projects</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="blogs.html">Blogs</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="photos.html">Photos</a></li>
+            <li class=""><a class="text-textMain hover:text-white transition-colors" href="#">About</a></li>
+        </ul>
+    </nav>
+    <button aria-label="Toggle Dark Mode" class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-white">
+        <svg class="lucide lucide-sun-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a2.836 2.836 0 0 0-4 4 4 4 0 1 1-4-4"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+    </button>
+</header>
+<!-- END: MainHeader -->
+
+<!-- BEGIN: Main Content -->
+ <main class="w-full max-w-[1200px] px-6 flex-grow flex flex-col items-center pt-16 md:pt-24 pb-16">
+    <div class="max-w-[800px] w-full flex flex-col gap-10">
+
+      <!-- Profile Header & Status -->
+      <section class="flex flex-col gap-4">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Hi, I'm Edgar.</h1>
+            <p class="text-xs uppercase tracking-wider text-textMuted font-mono mt-1.5">Software Engineer &amp; Full Stack Explorer</p>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface text-xs text-textMuted">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Open to Opportunities</span>
+          </div>
+        </div>
+
+        <p class="text-sm md:text-base text-textMuted leading-relaxed">
+          I am a curious software engineer and Information Systems student driven by a deep urge to dive into diverse technologies and learn by building. I thrive at bridging clean frontend interfaces, resilient backend architectures, business logic, and scalable cloud systems. Constantly experimenting across multiple domains—from full-stack web applications to AI/ML and modern cloud infrastructure—I focus on writing elegant code, solving complex problems, and expanding my technical horizons with every project.
+        </p>
+
+        <!-- Action Links -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="#" class="py-2 px-4 rounded-md border border-border bg-surface/50 text-white text-xs font-medium uppercase font-mono flex items-center justify-center gap-2 hover:bg-surface hover:border-textMuted transition-colors active:opacity-70">
+            <svg class="lucide lucide-download" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+            <span>Download CV</span>
+          </a>
+          <a aria-label="Email" href="mailto:contact@edgar.my.id" class="w-9 h-9 rounded-md border border-border bg-surface/50 flex items-center justify-center text-textMuted hover:text-white hover:bg-surface hover:border-textMuted transition-colors active:opacity-70">
+            <svg class="lucide lucide-mail" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </a>
+          <a aria-label="GitHub" href="https://github.com/edgararya" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-md border border-border bg-surface/50 flex items-center justify-center text-textMuted hover:text-white hover:bg-surface hover:border-textMuted transition-colors active:opacity-70">
+            <svg class="lucide lucide-terminal" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+          </a>
+          <a aria-label="LinkedIn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-md border border-border bg-surface/50 flex items-center justify-center text-textMuted hover:text-white hover:bg-surface hover:border-textMuted transition-colors active:opacity-70">
+            <svg class="lucide lucide-linkedin" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Skills / Tech Stacks Section -->
+      <section class="flex flex-col gap-6 pt-6 border-t border-border">
+
+        <!-- Frontend -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-textMuted font-mono">
+            <svg class="lucide lucide-palette" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+            <span>Frontend</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">React</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Next.js</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Inertia.js</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Tailwind CSS</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">TypeScript</span>
+          </div>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-textMuted font-mono">
+            <svg class="lucide lucide-database" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+            <span>Backend &amp; Database</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Laravel</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">PHP</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Node.js</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">MySQL</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">PostgreSQL</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Redis</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Exploration -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-textMuted font-mono">
+            <svg class="lucide lucide-box" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+            <span>DevOps &amp; Exploration</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Docker</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">AWS</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">GCP</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">Git</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">PyTorch</span>
+            <span class="px-3 py-1.5 rounded-full border border-border bg-surface text-xs text-textMain hover:border-textMuted transition-colors whitespace-nowrap">TensorFlow</span>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+</main>
+<!-- END: Main Content -->
+
+<!-- BEGIN: MainFooter -->
+ <footer class="w-full py-8 mt-auto flex justify-center text-xs text-textMuted">
+    <p class="">© 2025 edgar — built with Next.js and Tailwind</p>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

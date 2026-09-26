@@ -31,6 +31,7 @@
 ├── assets/
 │   └── Portofolio.png     # Preview image assets
 ├── page/
+│   ├── about.html         # Bio, career profile & tech stack overview
 │   ├── blogs.html         # Engineering notes & articles
 │   ├── photos.html        # Gallery showcase with lightbox
 │   └── project.html       # Projects showcase
