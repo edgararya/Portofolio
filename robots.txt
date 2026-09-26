@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://portofolio.edgar.my.id/sitemap.xml
+Sitemap: https://portofolio.edgar.my.id/sitemap.txt
