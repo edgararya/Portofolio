@@ -1,6 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap");
 
+/* ==========================================================================
+   Theme tokens. Values are "R G B" triplets so Tailwind can apply opacity
+   (e.g. bg-surface/50). Dark is the default; script.js sets
+   <html data-theme="light"> for the light palette.
+   ========================================================================== */
+:root {
+  color-scheme: dark;
+  --color-background: 11 15 21;
+  --color-surface: 19 26 34;
+  --color-border: 35 45 59;
+  --color-textMain: 226 232 240;
+  --color-textMuted: 148 163 184;
+  --color-tagBg: 30 41 59;
+  --color-tagText: 203 213 225;
+  --color-strong: 255 255 255; /* headings + hover emphasis */
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-background: 248 250 252;
+  --color-surface: 255 255 255;
+  --color-border: 203 213 225;
+  --color-textMain: 30 41 59;
+  --color-textMuted: 71 85 105;
+  --color-tagBg: 226 232 240;
+  --color-tagText: 51 65 85;
+  --color-strong: 15 23 42;
+}
+
+html {
+  /* Always reserve scrollbar space so the navbar does not jump between short
+     and long pages. */
+  scrollbar-gutter: stable;
+}
+
+/* Theme toggle: show the icon of the mode you will switch TO */
+.theme-moon {
+  display: none;
+}
+:root[data-theme='light'] .theme-sun {
+  display: none;
+}
+:root[data-theme='light'] .theme-moon {
+  display: inline-block;
+}
 body {
   font-family: "Inter", sans-serif;
 }

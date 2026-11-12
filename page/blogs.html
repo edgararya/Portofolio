@@ -25,57 +25,65 @@
       <nav aria-label="Main Navigation">
         <ul class="flex space-x-8 text-sm font-medium text-textMuted">
           <li class="">
-            <a class="hover:text-white transition-colors" href="../index.html"
+            <a class="hover:text-strong transition-colors" href="../index.html"
               >Home</a
             >
           </li>
           <li class="">
-            <a class="hover:text-white transition-colors" href="project.html"
+            <a class="hover:text-strong transition-colors" href="project.html"
               >Projects</a
             >
           </li>
           <li class="">
-            <a class="text-textMain hover:text-white transition-colors" href="#"
+            <a class="text-textMain hover:text-strong transition-colors" href="#"
               >Blogs</a
             >
           </li>
           <li class="">
-            <a class="hover:text-white transition-colors" href="photos.html"
+            <a class="hover:text-strong transition-colors" href="photos.html"
               >Photos</a
             >
           </li>
           <li class="">
-            <a class="hover:text-white transition-colors" href="about.html"
+            <a class="hover:text-strong transition-colors" href="about.html"
               >About</a
             >
           </li>
         </ul>
       </nav>
       <button
-        aria-label="Toggle Dark Mode"
-        class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-white"
+        type="button"
+        id="theme-toggle"
+        aria-label="Switch to light mode"
+        class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-strong cursor-pointer"
       >
+        <!-- Material Symbols Outlined: light_mode (shown in dark theme) -->
         <svg
-          class="lucide lucide-sun-moon"
-          fill="none"
-          height="18"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="18"
+          class="theme-sun"
           xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 -960 960 960"
+          fill="currentColor"
+          aria-hidden="true"
         >
-          <path d="M12 8a2.836 2.836 0 0 0-4 4 4 4 0 1 1-4-4"></path>
-          <path d="M12 2v2"></path>
-          <path d="M12 20v2"></path>
-          <path d="m4.93 4.93 1.41 1.41"></path>
-          <path d="m17.66 17.66 1.41 1.41"></path>
-          <path d="M2 12h2"></path>
-          <path d="M20 12h2"></path>
-          <path d="m6.34 17.66-1.41 1.41"></path>
-          <path d="m19.07 4.93-1.41 1.41"></path>
+          <path
+            d="M579-381q41-41 41-99t-41-99q-41-41-99-41t-99 41q-41 41-41 99t41 99q41 41 99 41t99-41Zm-240.5 42.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-450H40v-60h160v60Zm720 0H760v-60h160v60ZM450-760v-160h60v160h-60Zm0 720v-160h60v160h-60ZM262-658l-100-97 43-44 96 100-39 41Zm494 496-98-100 41-41 99 98-42 43Zm-99-537 98-99 44 42-99 98-43-41ZM162-205l99-98 42 42-98 99-43-43Zm318-275Z"
+          ></path>
+        </svg>
+        <!-- Material Symbols Outlined: dark_mode (shown in light theme) -->
+        <svg
+          class="theme-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 -960 960 960"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"
+          ></path>
         </svg>
       </button>
     </header>
@@ -90,7 +98,7 @@
         class="text-center flex flex-col items-center mb-16 w-full"
         data-purpose="hero-section"
       >
-        <h1 class="text-3xl font-semibold mb-4 text-white text-left w-full">
+        <h1 class="text-3xl font-semibold mb-4 text-strong text-left w-full">
           Blogs
         </h1>
         <p class="text-base text-textMuted leading-relaxed text-left w-full">
@@ -108,7 +116,7 @@
         >
           <div class="flex justify-between items-start w-full">
             <h3
-              class="text-sm font-medium text-white group-hover:text-white pr-4"
+              class="text-sm font-medium text-strong group-hover:text-strong pr-4"
             >
               Kenapa Live Scan Deepfake Butuh WebSocket, Bukan REST API Biasa?
             </h3>
@@ -149,7 +157,7 @@
         >
           <div class="flex justify-between items-start w-full">
             <h3
-              class="text-sm font-medium text-white group-hover:text-white pr-4"
+              class="text-sm font-medium text-strong group-hover:text-strong pr-4"
             >
               Ensemble Model untuk Klasifikasi Sampah
             </h3>
@@ -189,7 +197,7 @@
         >
           <div class="flex justify-between items-start w-full">
             <h3
-              class="text-sm font-medium text-white group-hover:text-white pr-4"
+              class="text-sm font-medium text-strong group-hover:text-strong pr-4"
             >
               Deteksi Deepfake dengan MesoNet Ensemble + ELA
             </h3>
@@ -228,7 +236,7 @@
         >
           <div class="flex justify-between items-start w-full">
             <h3
-              class="text-sm font-medium text-white group-hover:text-white pr-4"
+              class="text-sm font-medium text-strong group-hover:text-strong pr-4"
             >
               Belajar BPMN dari Studi Kasus Dapur MBG
             </h3>
@@ -267,7 +275,7 @@
         >
           <div class="flex justify-between items-start w-full">
             <h3
-              class="text-sm font-medium text-white group-hover:text-white pr-4"
+              class="text-sm font-medium text-strong group-hover:text-strong pr-4"
             >
               Catatan Eksplorasi Karier: IT BA vs Data Analyst
             </h3>
