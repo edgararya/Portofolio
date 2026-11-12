@@ -36,6 +36,16 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Mobile menu button: show the close icon while the menu is open */
+.menu-close-icon {
+  display: none;
+}
+#menu-toggle[aria-expanded='true'] .menu-open-icon {
+  display: none;
+}
+#menu-toggle[aria-expanded='true'] .menu-close-icon {
+  display: inline-block;
+}
 /* Theme toggle: show the icon of the mode you will switch TO */
 .theme-moon {
   display: none;

@@ -20,42 +20,43 @@
   >
     <!-- BEGIN: MainHeader -->
     <header
-      class="w-full max-w-[1200px] px-6 py-8 flex justify-center items-center relative"
+      class="w-full max-w-[1200px] px-6 py-8 flex justify-end md:justify-center items-center relative"
     >
-      <nav aria-label="Main Navigation">
-        <ul class="flex space-x-8 text-sm font-medium text-textMuted">
+      <nav id="site-nav" aria-label="Main Navigation" class="hidden md:block absolute right-6 top-full -mt-6 z-50 w-56 rounded-lg border border-border bg-surface p-2 shadow-lg md:static md:z-auto md:mt-0 md:w-auto md:rounded-none md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+        <ul class="flex flex-col md:flex-row md:space-x-8 text-sm font-medium text-textMuted">
           <li class="">
-            <a class="hover:text-strong transition-colors" href="../index.html"
+            <a class="block rounded-md px-3 py-2 md:p-0 hover:bg-background md:hover:bg-transparent hover:text-strong transition-colors" href="../index.html"
               >Home</a
             >
           </li>
           <li class="">
-            <a class="hover:text-strong transition-colors" href="project.html"
+            <a class="block rounded-md px-3 py-2 md:p-0 hover:bg-background md:hover:bg-transparent hover:text-strong transition-colors" href="project.html"
               >Projects</a
             >
           </li>
           <li class="">
-            <a class="text-textMain hover:text-strong transition-colors" href="#"
+            <a class="block rounded-md px-3 py-2 md:p-0 hover:bg-background md:hover:bg-transparent text-textMain hover:text-strong transition-colors" href="#"
               >Blogs</a
             >
           </li>
           <li class="">
-            <a class="hover:text-strong transition-colors" href="photos.html"
+            <a class="block rounded-md px-3 py-2 md:p-0 hover:bg-background md:hover:bg-transparent hover:text-strong transition-colors" href="photos.html"
               >Photos</a
             >
           </li>
           <li class="">
-            <a class="hover:text-strong transition-colors" href="about.html"
+            <a class="block rounded-md px-3 py-2 md:p-0 hover:bg-background md:hover:bg-transparent hover:text-strong transition-colors" href="about.html"
               >About</a
             >
           </li>
         </ul>
       </nav>
-      <button
+      <div class="ml-auto flex items-center gap-1 md:absolute md:right-6 md:ml-0">
+        <button
         type="button"
         id="theme-toggle"
         aria-label="Switch to light mode"
-        class="absolute right-6 p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-strong cursor-pointer"
+        class="p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-strong cursor-pointer"
       >
         <!-- Material Symbols Outlined: light_mode (shown in dark theme) -->
         <svg
@@ -86,6 +87,23 @@
           ></path>
         </svg>
       </button>
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          class="md:hidden p-2 rounded-md hover:bg-surface border border-transparent hover:border-border transition-colors text-textMuted hover:text-strong cursor-pointer"
+        >
+          <!-- Material Symbols Outlined: menu -->
+          <svg class="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
+            <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path>
+          </svg>
+          <!-- Material Symbols Outlined: close -->
+          <svg class="menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
+            <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"></path>
+          </svg>
+        </button>      </div>
     </header>
     <!-- END: MainHeader -->
 
