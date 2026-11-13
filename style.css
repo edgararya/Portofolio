@@ -36,6 +36,18 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Nav links: reserve room for the bold (active) weight in every link, so the
+   navbar never changes width or shifts when you move between pages. */
+.nav-link::after {
+  content: attr(data-text);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+}
 /* Mobile menu button: show the close icon while the menu is open */
 .menu-close-icon {
   display: none;
@@ -44,7 +56,7 @@ html {
   display: none;
 }
 #menu-toggle[aria-expanded='true'] .menu-close-icon {
-  display: inline-block;
+  display: block;
 }
 /* Theme toggle: show the icon of the mode you will switch TO */
 .theme-moon {
@@ -54,7 +66,7 @@ html {
   display: none;
 }
 :root[data-theme='light'] .theme-moon {
-  display: inline-block;
+  display: block;
 }
 body {
   font-family: "Inter", sans-serif;
