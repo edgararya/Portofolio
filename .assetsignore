@@ -1,0 +1,13 @@
+# Files in the repo root that must NOT be published on the website.
+# (Same syntax as .gitignore.)
+wrangler.jsonc
+.assetsignore
+.gitignore
+.git
+.github
+.wrangler
+node_modules
+vercel.json
+README.MD
+LICENSE
+doc

@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers (static assets) config. Serves this repo's static site.
+  // "name" must match the Worker name in the Cloudflare dashboard.
+  "name": "portofolio",
+  "compatibility_date": "2026-11-15",
+  "assets": {
+    // The site lives in the repo root; .assetsignore keeps non-site files out.
+    "directory": "./"
+  }
+}
