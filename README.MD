@@ -7,7 +7,7 @@
   <p>A minimalist personal website built with vanilla web technologies to showcase projects, engineering writings, and photography.</p>
 
   <p>
-    <a href="https://portofolio.edgar.my.id"><strong>View Live Demo »</strong></a>
+    <a href="https://edgar.my.id"><strong>View Live Demo »</strong></a>
   </p>
 </div>
 
